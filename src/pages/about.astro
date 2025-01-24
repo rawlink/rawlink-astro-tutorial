@@ -1,14 +1,18 @@
 ---
+import '../styles/global.css';
+
 const pageTitle = 'About Me';
 
 const identity = {
     firstName: 'K',
+    lastName: 'Dawg',
     country: 'USA... :-(',
     occupation: 'Software Engineer',
     hobbies: ['reading', 'writing', 'coding', 'gaming', 'cooking', 'eating', 'sleeping'],
 }
 
 const skills = ['nunchuck', 'special set'];
+
 const happy = true;
 const finished = false;
 const goal = 3;
@@ -51,7 +55,7 @@ const textCase = "uppercase";
 
         <p>Here are a few facts about me:</p>
         <ul>
-            <li>My name is {identity.firstName}.</li>
+            <li>My name is {identity.firstName} {identity.lastName}.</li>
             <li>I live in the {identity.country} and I work as a {identity.occupation}.</li>
             {identity.hobbies.length >= 2 &&
                 <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
